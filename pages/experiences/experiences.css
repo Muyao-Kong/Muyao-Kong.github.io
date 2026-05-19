@@ -154,12 +154,13 @@ md我已经尽力了 */
 #contents {
     padding-top: 110px;
     padding-bottom: 30px;
+    font-size: 28px;
 }
 
 #contents .title {
     padding-left: 30px;
     margin: 30px 0px 18px 0px;
-    font-size: 50px;
+    font-size: 44px;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
 }
@@ -175,7 +176,7 @@ md我已经尽力了 */
 
 .interns h1 {
     font-family: "Raleway", sans-serif;
-    font-size: 37px;
+    font-size: 44px;
     font-weight: 500;
 }
 
@@ -185,7 +186,7 @@ md我已经尽力了 */
     align-items: center;
     margin: 30px 0px 18px 0px;
     font-family: "Raleway", sans-serif;
-    font-size: 37px;
+    font-size: 28px;
     font-weight: 500;
 }
 
@@ -221,14 +222,14 @@ md我已经尽力了 */
 
 .detailed-info .position {
     font-family: "Raleway", sans-serif;
-    font-size: 37px;
+    font-size: 28px;
     font-weight: 150;
 }
 
 .detailed-info .description {
     margin-top: 20px;
     font-family: "Raleway", sans-serif;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 150;
     line-height: 1.5;
 }

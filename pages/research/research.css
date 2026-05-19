@@ -18,43 +18,40 @@
 
 #contents {
     padding: 110px 0px 50px 30px;
+    font-size: 28px;
 }
 
 #contents .title {
     margin: 30px 0px 18px 0px;
-    font-size: 50px;
+    font-size: 44px;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
 }
 
-#contents .field-of-study p {
-    padding: 0px;
+#contents .research-info {
+    max-width: 1100px;
+}
+
+#contents .research-section {
+    margin-bottom: 44px;
+}
+
+#contents .research-section h1 {
+    margin-bottom: 18px;
+    font-family: "Raleway", sans-serif;
+    font-size: 44px;
+    font-weight: 500;
+}
+
+#contents .research-section p {
     font-family: 'Raleway', sans-serif;
-    font-size: 35px;
-    font-weight: 200;
+    font-size: 28px;
+    font-weight: 300;
     line-height: 1.5;
 }
 
-#contents .coursework {
-    padding-top: 30px;
-}
-
-#contents .coursework h1 {
-    margin-bottom: 18px;
-    font-family: "Raleway", sans-serif;
-    font-size: 37px;
-    font-weight: 500;
-}
-
-#contents .coursework ul li {
-    list-style: none;
-}
-
-#contents .coursework ul li p {
-    font-family: "Raleway", sans-serif;
-    font-weight: 200;
-    font-size: 27px;
-    line-height: 1.7;
+#contents .publications-placeholder {
+    min-height: 120px;
 }
 
 #navbar {

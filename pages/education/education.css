@@ -152,13 +152,14 @@ md我已经尽力了 */
 
 #contents {
     padding-top: 110px;
+    font-size: 28px;
     /* padding-bottom: 30px; */
 }
 
 #contents .title {
     padding-left: 30px;
     margin: 30px 0px 18px 0px;
-    font-size: 50px;
+    font-size: 44px;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
 }
@@ -183,7 +184,7 @@ md我已经尽力了 */
     display: flex;
     justify-content: space-between;
     margin: 30px 0px 18px 0px;
-    font-size: 35px;
+    font-size: 28px;
     font-family: "Raleway", sans-serif;
     font-weight: 300;
 }
@@ -207,7 +208,7 @@ md我已经尽力了 */
 
 #contents #c-more-info p {
     font-family: "Raleway", sans-serif;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 150;
     line-height: 1.5;
 }
@@ -217,7 +218,7 @@ md我已经尽力了 */
     display: flex;
     justify-content: space-between;
     margin: 30px 0px 18px 0px;
-    font-size: 35px;
+    font-size: 28px;
     font-family: "Raleway", sans-serif;
     font-weight: 300;
 }
@@ -241,7 +242,7 @@ md我已经尽力了 */
 
 #contents #h-more-info p {
     font-family: "Raleway", sans-serif;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 150;
     line-height: 1.5;
 }
@@ -251,7 +252,7 @@ md我已经尽力了 */
     display: flex;
     justify-content: space-between;
     margin: 30px 0px 18px 0px;
-    font-size: 35px;
+    font-size: 28px;
     font-family: "Raleway", sans-serif;
     font-weight: 300;
 }
@@ -275,7 +276,7 @@ md我已经尽力了 */
 
 #contents #j-more-info p {
     font-family: "Raleway", sans-serif;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 150;
     line-height: 1.5;
 }
@@ -285,7 +286,7 @@ md我已经尽力了 */
     display: flex;
     justify-content: space-between;
     margin: 30px 0px 18px 0px;
-    font-size: 35px;
+    font-size: 28px;
     font-family: "Raleway", sans-serif;
     font-weight: 300;
 }
