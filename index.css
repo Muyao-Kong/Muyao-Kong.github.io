@@ -12,7 +12,8 @@
 }
 
 #contents {
-    padding-top: 160px;
+    padding: 160px 58px 50px 58px;
+    font-size: 28px;
 }
 
 #intro #greeting {
@@ -23,51 +24,90 @@
     color: #010101;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
-    font-size: 60px;
+    font-size: 44px;
     position: relative;
 }
 
 #intro #name-and-pic {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 48px;
+    margin: 0px 0px 8px 0px;
     position: relative;
 
+}
+
+#intro #name-and-pic #intro-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
 }
 
 #intro #name-and-pic #name {
-    display: inline-block;
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 24px 0px;
     padding: 0px;
     color:#010101;
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 70px;
+    font-weight: 500;
+    font-size: 44px;
     position: relative;
 }
 
+#intro #name-and-pic p {
+    margin: 0px;
+    padding: 0px;
+    color: #24272c;
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 1.45;
+}
+
+#intro #name-and-pic a {
+    color: #8b4ab8;
+    text-decoration: none;
+}
+
+#intro #name-and-pic a:hover {
+    color: var(--color-blue);
+}
+
+#intro #name-and-pic .intro-email {
+    margin-top: 42px;
+    font-size: 28px;
+}
+
+#intro #name-and-pic .intro-link {
+    margin-top: 44px;
+    font-size: 28px;
+}
+
 #intro #name-and-pic #img-parent {
-    display: inline-block;
-    margin: 0px 30px 15px 0px;
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 50%;
+    flex: 0 0 220px;
+    margin: -6px 0px 0px 0px;
+    max-width: 220px;
+    padding: 6px;
+    border: 1px solid #d8dee6;
+    border-radius: 4px;
     overflow: hidden;
-    box-shadow: 5px 5px 100px rgb(100, 100, 100);
+    box-shadow: none;
 }
 
 #intro #name-and-pic img{
-    display: inline-block;
-    max-width: 100%;
-    max-height: 100%;
+    display: block;
+    width: 100%;
+    height: 220px;
     object-fit: cover;
-    transform: translate(0%, +5%);
+    object-position: center top;
+    transform: none;
     transition: transform 0.5s ease; 
     
 }
 
 #intro #name-and-pic img:hover {
-    transform: translateY(+10%) scale(1.1);
+    transform: scale(1.02);
 }
 
 #navbar {
@@ -77,40 +117,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 35px;
+    padding: 0 58px;
+    box-sizing: border-box;
     top: 0;
     position: fixed;
     z-index: 9999;
 }
 
 #navbar .logo {
-    display: inline-block;
-    margin-left: 10px;
-    max-width: 60px;
-    max-height: 60px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-#navbar .logo img{
-    display: inline-block;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    transform: translate(0%, +5%);
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
-#navbar .logo img:hover {
-    cursor: pointer;
-    filter: brightness(0.6);
+#navbar .logo:hover {
+    color: var(--color-blue);
 }
 
 #navbar ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 0 60px;
+    padding: 0px;
 }
 
 #navbar ul li {
@@ -204,21 +237,13 @@ md我已经尽力了 */
     margin: 10px;
 }
 
-#homepage-introduction p{
-    margin: 10px 30px 10px 30px;
-    padding: 0px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    line-height: 1.5;
-}
-
 #general-info {
-    padding: 30px 30px;
+    padding: 16px 0px 0px 0px;
     margin-bottom: 3vh;
 }
 
 #general-info h1 {
-    font-size: 50px;
+    font-size: 44px;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
 }
@@ -230,41 +255,49 @@ md我已经尽力了 */
 
 #general-info ul li p {
     padding: 7px 0;
-    font-size: 25px;
+    font-size: 28px;
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
 }
 
-audio {
-    display: none;
+@media (max-width: 800px) {
+    #contents {
+        padding: 160px 28px 50px 28px;
+    }
+
+    #intro #name-and-pic {
+        flex-direction: column;
+        gap: 24px;
+        margin: 0px 0px 24px 0px;
+    }
+
+    #intro #name-and-pic #name {
+        font-size: 44px;
+    }
+
+    #intro #name-and-pic p {
+        font-size: 28px;
+    }
+
+    #intro #name-and-pic .intro-email {
+        margin-top: 30px;
+        font-size: 28px;
+    }
+
+    #intro #name-and-pic .intro-link {
+        margin-top: 30px;
+        font-size: 28px;
+    }
+
+    #intro #name-and-pic #img-parent {
+        flex: none;
+        width: min(100%, 310px);
+        margin: 0px;
+    }
+
+    #intro #name-and-pic img {
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
 }
-
-.audio-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 16px;      /* 可根据需要调小 */
-    height: 16px;     /* 可根据需要调小 */
-    padding: 0;
-    margin: 0 4px;
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-.audio-btn::before {
-    content: '▶︎';
-    font-size: 16px;
-    line-height: 1;
-  
-}
-
-.audio-btn.playing::before {
-    content: '❚❚';
-}
-
-#homepage-introduction .voiceover {
-    font-size: 16px;
-  }
-
-

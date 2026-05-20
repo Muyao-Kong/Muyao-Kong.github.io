@@ -1,5 +1,5 @@
 // two DOM queries:
-const logoImg      = document.querySelector('#navbar .logo img');
+const logoImg      = document.querySelector('#navbar .logo');
 const contactLinks = document.querySelectorAll('.contact-details a');
 
 // clicking logo → back home

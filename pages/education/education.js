@@ -12,11 +12,6 @@ const hSchool = document.querySelector("#h-school");
 const hLocAndGdate = document.querySelector("#h-location-and-gdate");
 const hMoreInfo = document.querySelector("#h-more-info");
 
-const juniorHighHTML = document.querySelector("#junior-high");
-const jLogo = document.getElementById("j-logo");
-const jSchool = document.querySelector("#j-school");
-const jLocAndGdate = document.querySelector("#j-location-and-gdate");
-const jMoreInfo = document.querySelector("#j-more-info");
 //可能用得上？
 const otherHTML = document.querySelector("#other");
 
@@ -132,47 +127,6 @@ function displayEducation() {
         hSchool.innerHTML += hSchoolString;
         hLocAndGdate.innerHTML += hLocAndGdateString;
         // hMoreInfo.innerHTML += hMoreInfoString;
-
-
-
-        // Junior High
-        // Junior High Data Declared (用于复用)
-        var juniorHighData = data.junior_high;
-
-        // Add Logo
-        jLogo.querySelector("img").src = juniorHighData.logo_1x;
-        jLogo.querySelector("img").srcset = `
-            ${juniorHighData.logo_1x} 1x,
-            ${juniorHighData.logo_2x} 2x
-        `;
-        jLogo.querySelector("img").alt = juniorHighData.name + " logo";
-
-        // Strings Declared
-        var jSchoolString = 
-        `
-            <header>
-                <p>${juniorHighData.name}</p>
-            </header>
-            
-        `;
-        var jLocAndGdateString = 
-        `
-            <header>
-                <p>${juniorHighData.location}</p>
-                <p>${juniorHighData.graduation_date}</p>
-            </header>
-            
-        `;
-        // var jMoreInfoString = juniorHighData.coursework.map(course => {
-        //     return `
-        //         <p>${course}</p>
-        //     `
-        // }).join("\n");
-
-        // Add Strings to HTML
-        jSchool.innerHTML += jSchoolString;
-        jLocAndGdate.innerHTML += jLocAndGdateString;
-        // jMoreInfo.innerHTML += jMoreInfoString;
 
     });
 }

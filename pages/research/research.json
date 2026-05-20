@@ -1,0 +1,15 @@
+{
+    "research_interest": {
+        "title": "Research Interest",
+        "paragraphs": [
+            "large language models, text generation, LLM decoding policy, representation learning"
+        ]
+    },
+    "publications_and_manuscripts": {
+        "title": "Publications and Manuscripts",
+        "publications": [
+            "[1] Muyao Kong, and Zhihao Lin. \"Read the Room Before Your Model Generates.\" Under review at the Conference on Empirical Methods in Natural Language Processing (EMNLP), 2026.",
+            "[2] Muqiao Tao, Muyao Kong, and Qitian Xiong. \"Generate-then-Rerank for Pedagogically Calibrated Language-Model Explanations.\" 2026 (manuscript in preparation)."
+        ]
+    }
+}
