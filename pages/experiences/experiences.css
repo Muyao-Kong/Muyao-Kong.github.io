@@ -23,40 +23,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 35px;
+    padding: 0 58px;
+    box-sizing: border-box;
     top: 0;
     position: fixed;
     z-index: 9999;
 }
 
 #navbar .logo {
-    display: inline-block;
-    margin-left: 10px;
-    max-width: 60px;
-    max-height: 60px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-#navbar .logo img{
-    display: inline-block;
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
-    transform: translate(0%, +5%);
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
-#navbar .logo img:hover {
-    cursor: pointer;
-    filter: brightness(0.6);
+#navbar .logo:hover {
+    color: var(--color-blue);
 }
 
 #navbar ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    padding: 0 60px;
+    padding: 0px;
 }
 
 #navbar ul li {
@@ -152,26 +145,24 @@ md我已经尽力了 */
 
 /* professional experiences */
 #contents {
-    padding-top: 110px;
-    padding-bottom: 30px;
+    padding: 160px 58px 50px 58px;
     font-size: 28px;
 }
 
 #contents .title {
-    padding-left: 30px;
-    margin: 30px 0px 18px 0px;
+    margin: 0px 0px 18px 0px;
     font-size: 44px;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
 }
 
 #contents ul {
-    padding: 0 35px;
+    padding: 0px;
 }
 
 #contents li {
     list-style: None;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 
 .interns h1 {
@@ -238,4 +229,10 @@ md我已经尽力了 */
     font-weight: 450;
     display: inline;
     margin: 0;
+}
+
+@media (max-width: 600px) {
+    #contents {
+        padding: 160px 28px 50px 28px;
+    }
 }

@@ -16,7 +16,7 @@ tabs.forEach(tab => {
 });
 
 // also allow clicking the logo to go back home
-const logoImg = document.querySelector('#navbar .logo img');
+const logoImg = document.querySelector('#navbar .logo');
 logoImg.addEventListener('click', () => {
     window.location.href = '../../index.html';
 });

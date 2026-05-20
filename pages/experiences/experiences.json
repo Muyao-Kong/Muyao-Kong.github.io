@@ -10,12 +10,12 @@
         },
 
         {
-            "name": "China Merchants Securities Co. Ltd",
-            "logo_1x": "../../assets/cms-480.jpg",
-            "logo_2x": "../../assets/cms.png",
-            "duration": "Jul 2024 - Aug 2024",
-            "position": "Wealth management consultant",
-            "description": "- Learned professional knowledge of business and finance, such as brokerage business, capital intermediary business as well as professional concepts such as structured deposit, risk level, etc.\n- Examined the operating principles of the securities market, investigated the management structure, service processes and operating models of securities companies.\n- Deep-mined, organized, screened and analyzed public fund data based on <div class='bold'>volatility</div>, <div class='bold'>maximum retracement</div>, <div class='bold'>Sharpe ratio</div>, <div class='bold'>downside risk</div>, etc."
+            "name": "China Cinda Asset Management Co., Ltd",
+            "logo_1x": "../../assets/china-cinda.png",
+            "logo_2x": "../../assets/china-cinda.png",
+            "duration": "Jun 2025 - Aug 2025",
+            "position": "Risk management intern",
+            "description": "- Synthesized industry and internal case materials on distressed asset resolution (e.g., debt-to-equity swaps, auctions, restructurings) and distilled key risk factors into reusable briefings for internal reference.\n- Compiled and standardized annual report data across 18 financial institutions including banks, AMCs and brokers, extracting and consolidating key financial and disclosure items into structured datasets for analysis.\n- Performed basic cross-company and time-series comparisons (leverage, liquidity, profitability quality, impairments, contingencies) and drafted concise risk highlights to support internal documentation.\n- Operated under strict data-access and compliance constraints, focusing on public disclosures and documentation workflows to improve traceability and retrieval efficiency."
         }
 
     ]

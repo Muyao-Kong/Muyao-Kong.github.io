@@ -1,6 +1,6 @@
 {
     "current_school": {
-        "name": "New York University, College of Arts and Science",
+        "name": "New York University",
         "logo_1x": "../../assets/nyu-480.png",
         "logo_2x": "../../assets/nyu.png",
         "location": "New York, NY",
@@ -38,31 +38,6 @@
             "AP Macroeconomics",
             "AP Psychology",
             "AP Computer Science"
-        ]
-    },
-
-    "junior_high": {
-        "name": "Dongfang Bilingual Experimental School of Jinan",
-        "logo_1x": "../../assets/df-bilingual-480.jpg",
-        "logo_2x": "../../assets/df-bilingual.jpg",
-        "location": "Jinan, China",
-        "graduation_date": "June 2020",
-        "gpa": "A",
-        "degree":"junior high school",
-        "coursework": [
-            "Chinese",
-            "Mathematics",
-            "English",
-            "Physics",
-            "Chemistry",
-            "Biology",
-            "Geography",
-            "Information Technology",
-            "Politics",
-            "History",
-            "Art",
-            "Music",
-            "P.E."
         ]
     }
 }
