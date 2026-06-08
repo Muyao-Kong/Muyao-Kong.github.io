@@ -146,12 +146,12 @@ md我已经尽力了 */
 /* professional experiences */
 #contents {
     padding: 160px 58px 50px 58px;
-    font-size: 28px;
+    font-size: var(--font-size-body);
 }
 
 #contents .title {
-    margin: 0px 0px 18px 0px;
-    font-size: 44px;
+    margin: 0px 0px 32px 0px;
+    font-size: var(--font-size-page-title);
     font-family: "Raleway", sans-serif;
     font-weight: 500;
 }
@@ -167,8 +167,9 @@ md我已经尽力了 */
 
 .interns h1 {
     font-family: "Raleway", sans-serif;
-    font-size: 44px;
+    font-size: var(--font-size-section-title);
     font-weight: 500;
+    margin-bottom: 16px;
 }
 
 .company {
@@ -177,7 +178,7 @@ md我已经尽力了 */
     align-items: center;
     margin: 30px 0px 18px 0px;
     font-family: "Raleway", sans-serif;
-    font-size: 28px;
+    font-size: var(--font-size-body);
     font-weight: 500;
 }
 
@@ -213,14 +214,14 @@ md我已经尽力了 */
 
 .detailed-info .position {
     font-family: "Raleway", sans-serif;
-    font-size: 28px;
+    font-size: var(--font-size-body);
     font-weight: 150;
 }
 
 .detailed-info .description {
     margin-top: 20px;
     font-family: "Raleway", sans-serif;
-    font-size: 28px;
+    font-size: var(--font-size-body);
     font-weight: 150;
     line-height: 1.5;
 }
@@ -253,23 +254,24 @@ md我已经尽力了 */
 
     #contents {
         padding: 100px 24px 40px 24px;
-        font-size: 20px;
+        font-size: var(--font-size-body);
     }
 
     #contents .title {
-        font-size: 32px;
-        margin: 0px 0px 16px 0px;
+        font-size: var(--font-size-page-title);
+        margin: 0px 0px 24px 0px;
     }
 
     .interns h1 {
-        font-size: 32px;
+        font-size: var(--font-size-section-title);
+        margin-bottom: 12px;
     }
 
     .company {
         flex-direction: column;
         align-items: flex-start;
         margin: 24px 0px 14px 0px;
-        font-size: 20px;
+        font-size: var(--font-size-body);
     }
 
     .company .left {
@@ -290,12 +292,12 @@ md我已经尽力了 */
     }
 
     .detailed-info .position {
-        font-size: 18px;
+        font-size: var(--font-size-body);
     }
 
     .detailed-info .description {
         margin-top: 16px;
-        font-size: 18px;
+        font-size: var(--font-size-body);
         line-height: 1.4;
     }
 }
@@ -336,12 +338,12 @@ md我已经尽力了 */
 
     #contents {
         padding: 85px 16px 30px 16px;
-        font-size: 16px;
+        font-size: var(--font-size-body);
     }
 
     #contents .title {
-        font-size: 24px;
-        margin: 0px 0px 14px 0px;
+        font-size: var(--font-size-page-title);
+        margin: 0px 0px 18px 0px;
     }
 
     #contents li {
@@ -349,15 +351,15 @@ md我已经尽力了 */
     }
 
     .interns h1 {
-        font-size: 24px;
-        margin-bottom: 12px;
+        font-size: var(--font-size-section-title);
+        margin-bottom: 10px;
     }
 
     .company {
         flex-direction: column;
         align-items: flex-start;
         margin: 16px 0px 10px 0px;
-        font-size: 16px;
+        font-size: var(--font-size-body);
     }
 
     .company .left {
@@ -379,12 +381,12 @@ md我已经尽力了 */
     }
 
     .detailed-info .position {
-        font-size: 16px;
+        font-size: var(--font-size-body);
     }
 
     .detailed-info .description {
         margin-top: 12px;
-        font-size: 16px;
+        font-size: var(--font-size-body);
         line-height: 1.35;
     }
 

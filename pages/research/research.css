@@ -18,12 +18,12 @@
 
 #contents {
     padding: 160px 58px 50px 58px;
-    font-size: 28px;
+    font-size: var(--font-size-body);
 }
 
 #contents .title {
-    margin: 0px 0px 18px 0px;
-    font-size: 44px;
+    margin: 0px 0px 32px 0px;
+    font-size: var(--font-size-page-title);
     font-family: "Raleway", sans-serif;
     font-weight: 500;
 }
@@ -38,8 +38,9 @@
 
 #contents .research-section h1 {
     font-family: "Raleway", sans-serif;
-    font-size: 44px;
+    font-size: var(--font-size-section-title);
     font-weight: 500;
+    margin-bottom: 16px;
 }
 
 /* Tablet (768px and below) */
@@ -64,12 +65,12 @@
 
     #contents {
         padding: 100px 24px 40px 24px;
-        font-size: 20px;
+        font-size: var(--font-size-body);
     }
 
     #contents .title {
-        font-size: 32px;
-        margin: 0px 0px 16px 0px;
+        font-size: var(--font-size-page-title);
+        margin: 0px 0px 24px 0px;
     }
 
     #contents .research-info {
@@ -81,13 +82,13 @@
     }
 
     #contents .research-section h1 {
-        font-size: 28px;
+        font-size: var(--font-size-section-title);
         margin-bottom: 12px;
     }
 
     #contents .research-section p {
         padding: 6px 0;
-        font-size: 18px;
+        font-size: var(--font-size-body);
         line-height: 1.4;
     }
 
@@ -132,12 +133,12 @@
 
     #contents {
         padding: 85px 16px 30px 16px;
-        font-size: 16px;
+        font-size: var(--font-size-body);
     }
 
     #contents .title {
-        font-size: 24px;
-        margin: 0px 0px 14px 0px;
+        font-size: var(--font-size-page-title);
+        margin: 0px 0px 18px 0px;
     }
 
     #contents .research-info {
@@ -149,13 +150,13 @@
     }
 
     #contents .research-section h1 {
-        font-size: 22px;
+        font-size: var(--font-size-section-title);
         margin-bottom: 10px;
     }
 
     #contents .research-section p {
         padding: 5px 0;
-        font-size: 16px;
+        font-size: var(--font-size-body);
         line-height: 1.35;
     }
 
@@ -167,7 +168,7 @@
 #contents .research-section p {
     padding: 7px 0;
     font-family: 'Raleway', sans-serif;
-    font-size: 28px;
+    font-size: var(--font-size-body);
     font-weight: 300;
     line-height: 1.5;
 }
@@ -308,7 +309,7 @@ md我已经尽力了 */
 @media (max-width: 768px) {
     #contents .research-section p {
         padding: 6px 0;
-        font-size: 18px;
+        font-size: var(--font-size-body);
         line-height: 1.5;
     }
 
@@ -320,7 +321,7 @@ md我已经尽力了 */
 @media (max-width: 480px) {
     #contents .research-section p {
         padding: 5px 0;
-        font-size: 16px;
+        font-size: var(--font-size-body);
         line-height: 1.5;
         overflow-wrap: anywhere;
     }

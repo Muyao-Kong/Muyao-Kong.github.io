@@ -13,7 +13,7 @@
 
 #contents {
     padding: 160px 58px 50px 58px;
-    font-size: 28px;
+    font-size: var(--font-size-body);
 }
 
 #intro #greeting {
@@ -24,7 +24,7 @@
     color: #010101;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
-    font-size: 44px;
+    font-size: var(--font-size-page-title);
     position: relative;
 }
 
@@ -51,7 +51,7 @@
     color:#010101;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
-    font-size: 44px;
+    font-size: var(--font-size-page-title);
     position: relative;
 }
 
@@ -60,7 +60,7 @@
     padding: 0px;
     color: #24272c;
     font-family: 'Raleway', sans-serif;
-    font-size: 28px;
+    font-size: var(--font-size-body);
     font-weight: 300;
     line-height: 1.45;
 }
@@ -76,12 +76,12 @@
 
 #intro #name-and-pic .intro-email {
     margin-top: 42px;
-    font-size: 28px;
+    font-size: var(--font-size-body);
 }
 
 #intro #name-and-pic .intro-link {
     margin-top: 44px;
-    font-size: 28px;
+    font-size: var(--font-size-body);
 }
 
 #intro #name-and-pic #img-parent {
@@ -243,7 +243,7 @@ md我已经尽力了 */
 }
 
 #general-info h1 {
-    font-size: 44px;
+    font-size: var(--font-size-section-title);
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
 }
@@ -255,7 +255,7 @@ md我已经尽力了 */
 
 #general-info ul li p {
     padding: 7px 0;
-    font-size: 28px;
+    font-size: var(--font-size-body);
     font-family: 'Raleway', sans-serif;
     font-weight: 300;
 }
@@ -282,11 +282,11 @@ md我已经尽力了 */
 
     #contents {
         padding: 100px 24px 40px 24px;
-        font-size: 20px;
+        font-size: var(--font-size-body);
     }
 
     #intro #greeting {
-        font-size: 32px;
+        font-size: var(--font-size-page-title);
         margin: 40px 0px 24px 0px;
     }
 
@@ -297,23 +297,23 @@ md我已经尽力了 */
     }
 
     #intro #name-and-pic #name {
-        font-size: 32px;
+        font-size: var(--font-size-page-title);
         margin: 0px 0px 16px 0px;
     }
 
     #intro #name-and-pic p {
-        font-size: 18px;
+        font-size: var(--font-size-body);
         line-height: 1.4;
     }
 
     #intro #name-and-pic .intro-email {
         margin-top: 24px;
-        font-size: 18px;
+        font-size: var(--font-size-body);
     }
 
     #intro #name-and-pic .intro-link {
         margin-top: 24px;
-        font-size: 18px;
+        font-size: var(--font-size-body);
     }
 
     #intro #name-and-pic #img-parent {
@@ -330,11 +330,11 @@ md我已经尽力了 */
     }
 
     #general-info h1 {
-        font-size: 32px;
+        font-size: var(--font-size-section-title);
     }
 
     #general-info ul li p {
-        font-size: 18px;
+        font-size: var(--font-size-body);
     }
 }
 
@@ -367,11 +367,11 @@ md我已经尽力了 */
 
     #contents {
         padding: 85px 16px 30px 16px;
-        font-size: 16px;
+        font-size: var(--font-size-body);
     }
 
     #intro #greeting {
-        font-size: 24px;
+        font-size: var(--font-size-page-title);
         margin: 30px 0px 20px 0px;
     }
 
@@ -381,23 +381,23 @@ md我已经尽力了 */
     }
 
     #intro #name-and-pic #name {
-        font-size: 24px;
+        font-size: var(--font-size-page-title);
         margin: 0px 0px 12px 0px;
     }
 
     #intro #name-and-pic p {
-        font-size: 16px;
+        font-size: var(--font-size-body);
         line-height: 1.35;
     }
 
     #intro #name-and-pic .intro-email {
         margin-top: 18px;
-        font-size: 16px;
+        font-size: var(--font-size-body);
     }
 
     #intro #name-and-pic .intro-link {
         margin-top: 18px;
-        font-size: 16px;
+        font-size: var(--font-size-body);
     }
 
     #intro #name-and-pic #img-parent {
@@ -410,7 +410,7 @@ md我已经尽力了 */
     }
 
     #general-info h1 {
-        font-size: 24px;
+        font-size: var(--font-size-section-title);
     }
 
     #general-info ul li {
@@ -418,7 +418,7 @@ md我已经尽力了 */
     }
 
     #general-info ul li p {
-        font-size: 16px;
+        font-size: var(--font-size-body);
         line-height: 1.5;
     }
 }

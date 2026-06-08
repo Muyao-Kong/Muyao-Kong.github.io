@@ -145,20 +145,20 @@ md我已经尽力了 */
 
 #contents {
     font-family: "Raleway", sans-serif;
-    font-size: 28px;
+    font-size: var(--font-size-body);
     padding: 160px 58px 50px 58px;
     margin: 0px;
 }
 
 #contents .title {
-    font-size: 44px;
+    font-size: var(--font-size-page-title);
     font-family: "Raleway", sans-serif;
     font-weight: 500;
-    margin-bottom: 40px;
+    margin-bottom: 32px;
 }
 
 .contact-details {
-    font-size: 28px;
+    font-size: var(--font-size-body);
     line-height: 1.6;
 }
 
@@ -205,16 +205,16 @@ md我已经尽力了 */
 
     #contents {
         padding: 100px 24px 40px 24px;
-        font-size: 20px;
+        font-size: var(--font-size-body);
     }
 
     #contents .title {
-        font-size: 32px;
-        margin-bottom: 32px;
+        font-size: var(--font-size-page-title);
+        margin-bottom: 24px;
     }
 
     .contact-details {
-        font-size: 20px;
+        font-size: var(--font-size-body);
         line-height: 1.5;
     }
 
@@ -259,16 +259,16 @@ md我已经尽力了 */
 
     #contents {
         padding: 85px 16px 30px 16px;
-        font-size: 16px;
+        font-size: var(--font-size-body);
     }
 
     #contents .title {
-        font-size: 24px;
-        margin-bottom: 24px;
+        font-size: var(--font-size-page-title);
+        margin-bottom: 18px;
     }
 
     .contact-details {
-        font-size: 16px;
+        font-size: var(--font-size-body);
         line-height: 1.4;
     }
 
