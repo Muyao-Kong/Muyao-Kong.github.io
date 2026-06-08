@@ -183,12 +183,100 @@ md我已经尽力了 */
     color: var(--color-navbar);
 }
 
-/* for mobile devices */
-@media (max-width: 600px) {
-  #contents {
-    padding: 160px 28px 50px 28px;
-  }
-  #navbar ul {
-    flex-wrap: wrap;
-  }
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    #navbar {
+        padding: 0 24px;
+        height: 70px;
+    }
+
+    #navbar .logo {
+        font-size: 18px;
+    }
+
+    #navbar ul li {
+        width: auto;
+        padding: 8px 16px;
+    }
+
+    #navbar ul li a {
+        font-size: 16px;
+    }
+
+    #contents {
+        padding: 100px 24px 40px 24px;
+        font-size: 20px;
+    }
+
+    #contents .title {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+
+    .contact-details {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .contact-details p {
+        margin-bottom: 16px;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    #navbar {
+        padding: 0 16px;
+        height: 65px;
+    }
+
+    #navbar .logo {
+        font-size: 16px;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+    }
+
+    #navbar ul li {
+        padding: 6px 12px;
+        width: auto;
+    }
+
+    #navbar ul li a {
+        font-size: 14px;
+    }
+
+    #navbar ul li:hover .dropdown-1 li {
+        margin: 10px;
+    }
+
+    #navbar ul li:hover .dropdown-2 li {
+        margin: 8px;
+    }
+
+    #contents {
+        padding: 85px 16px 30px 16px;
+        font-size: 16px;
+    }
+
+    #contents .title {
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+
+    .contact-details {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .contact-details p {
+        margin-bottom: 12px;
+    }
+
+    .contact-details a {
+        overflow-wrap: anywhere;
+    }
 }

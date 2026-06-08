@@ -252,8 +252,159 @@ md我已经尽力了 */
     font-weight: 300;
 }
 
-@media (max-width: 600px) {
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    #navbar {
+        padding: 0 24px;
+        height: 70px;
+    }
+
+    #navbar .logo {
+        font-size: 18px;
+    }
+
+    #navbar ul li {
+        width: auto;
+        padding: 8px 16px;
+    }
+
+    #navbar ul li a {
+        font-size: 16px;
+    }
+
     #contents {
-        padding: 160px 28px 50px 28px;
+        padding: 100px 24px 40px 24px;
+        font-size: 20px;
+    }
+
+    #contents .title {
+        font-size: 32px;
+        margin: 0px 0px 16px 0px;
+    }
+
+    #contents li {
+        padding-bottom: 24px;
+    }
+
+    #contents #current-school,
+    #contents #high-school,
+    #contents #other {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 24px 0px 14px 0px;
+        font-size: 20px;
+    }
+
+    #contents .left {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    #contents #c-location-and-gdate,
+    #contents #h-location-and-gdate {
+        margin-top: 12px;
+        color: #4b5563;
+        line-height: 1.45;
+    }
+
+    #contents #c-logo,
+    #contents #h-logo {
+        margin-right: 16px;
+        margin-bottom: 12px;
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    #contents #c-more-info p,
+    #contents #h-more-info p {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    #navbar {
+        padding: 0 16px;
+        height: 65px;
+    }
+
+    #navbar .logo {
+        font-size: 16px;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+    }
+
+    #navbar ul li {
+        padding: 6px 12px;
+        width: auto;
+    }
+
+    #navbar ul li a {
+        font-size: 14px;
+    }
+
+    #navbar ul li:hover .dropdown-1 li {
+        margin: 10px;
+    }
+
+    #navbar ul li:hover .dropdown-2 li {
+        margin: 8px;
+    }
+
+    #contents {
+        padding: 85px 16px 30px 16px;
+        font-size: 16px;
+    }
+
+    #contents .title {
+        font-size: 24px;
+        margin: 0px 0px 14px 0px;
+    }
+
+    #contents li {
+        padding-bottom: 20px;
+    }
+
+    #contents #current-school,
+    #contents #high-school,
+    #contents #other {
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 18px 0px 10px 0px;
+        font-size: 16px;
+    }
+
+    #contents #c-logo,
+    #contents #h-logo {
+        flex: 0 0 60px;
+        margin-right: 12px;
+        margin-bottom: 10px;
+        width: 60px;
+        height: 60px;
+        max-width: 60px;
+        max-height: 60px;
+    }
+
+    #contents #c-more-info p,
+    #contents #h-more-info p {
+        font-size: 16px;
+        line-height: 1.35;
+    }
+
+    #contents .school-name {
+        margin-bottom: 8px;
+    }
+
+    #contents #c-school-and-major,
+    #contents #h-school,
+    #contents #c-location-and-gdate,
+    #contents #h-location-and-gdate {
+        min-width: 0;
+        overflow-wrap: anywhere;
     }
 }

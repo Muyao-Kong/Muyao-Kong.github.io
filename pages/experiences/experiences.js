@@ -36,7 +36,10 @@ function displayExperiences(){
             <li>
                 <div class="company">
                     <div class="left">
-                        <div class="logo"><img src=${job.logo_1x} srcset=${job.logo_2x} 2x, ${job.logo_1x} 1x alt="failed to load"></div>
+                        <div class="logo">
+                            <img src="${job.logo_1x}" srcset="${job.logo_2x} 2x, ${job.logo_1x} 1x"
+                                alt="${job.name} logo">
+                        </div>
                         <p>${job.name}</p>
                     </div>
 
@@ -44,8 +47,8 @@ function displayExperiences(){
                 </div>
                 <div class="detailed-info hidden">
                     <div class="position"> <p>${job.position}</p> </div>
-                    <div class="description"> <span>${jobDescriptionHTML}</span></br> </div>
-                <div>
+                    <div class="description"><span>${jobDescriptionHTML}</span></div>
+                </div>
             </li>
         `
         }

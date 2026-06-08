@@ -42,9 +42,125 @@
     font-weight: 500;
 }
 
-@media (max-width: 600px) {
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+    #navbar {
+        padding: 0 24px;
+        height: 70px;
+    }
+
+    #navbar .logo {
+        font-size: 18px;
+    }
+
+    #navbar ul li {
+        width: auto;
+        padding: 8px 16px;
+    }
+
+    #navbar ul li a {
+        font-size: 16px;
+    }
+
     #contents {
-        padding: 160px 28px 50px 28px;
+        padding: 100px 24px 40px 24px;
+        font-size: 20px;
+    }
+
+    #contents .title {
+        font-size: 32px;
+        margin: 0px 0px 16px 0px;
+    }
+
+    #contents .research-info {
+        max-width: 100%;
+    }
+
+    #contents .research-section {
+        margin-bottom: 32px;
+    }
+
+    #contents .research-section h1 {
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    #contents .research-section p {
+        padding: 6px 0;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    #contents .research-section ul li {
+        margin-top: 16px;
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    #navbar {
+        padding: 0 16px;
+        height: 65px;
+    }
+
+    #navbar .logo {
+        font-size: 16px;
+    }
+
+    #navbar ul {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 4px;
+    }
+
+    #navbar ul li {
+        padding: 6px 12px;
+        width: auto;
+    }
+
+    #navbar ul li a {
+        font-size: 14px;
+    }
+
+    #navbar ul li:hover .dropdown-1 li {
+        margin: 10px;
+    }
+
+    #navbar ul li:hover .dropdown-2 li {
+        margin: 8px;
+    }
+
+    #contents {
+        padding: 85px 16px 30px 16px;
+        font-size: 16px;
+    }
+
+    #contents .title {
+        font-size: 24px;
+        margin: 0px 0px 14px 0px;
+    }
+
+    #contents .research-info {
+        max-width: 100%;
+    }
+
+    #contents .research-section {
+        margin-bottom: 24px;
+    }
+
+    #contents .research-section h1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    #contents .research-section p {
+        padding: 5px 0;
+        font-size: 16px;
+        line-height: 1.35;
+    }
+
+    #contents .research-section ul li {
+        margin-top: 12px;
     }
 }
 
@@ -186,4 +302,30 @@ md我已经尽力了 */
 
 #navbar ul li:hover .dropdown-2 li {
     margin: 10px;
+}
+
+/* Keep responsive text rules after the desktop declarations above. */
+@media (max-width: 768px) {
+    #contents .research-section p {
+        padding: 6px 0;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    #contents .research-section ul li {
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #contents .research-section p {
+        padding: 5px 0;
+        font-size: 16px;
+        line-height: 1.5;
+        overflow-wrap: anywhere;
+    }
+
+    #contents .research-section ul li {
+        margin-top: 12px;
+    }
 }

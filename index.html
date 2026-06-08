@@ -6,35 +6,37 @@
         <title>Muyao Kong</title>
         
         <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="./assets/site-nav.css?v=20260608-2">
     </head>
     
     <body>
-        <nav id="navbar">
-            <div class="logo">
-                <span>Muyao Kong</span>
-            </div>
-            <ul>
-                <li><a href="">Bio</a>
-                    <ul>
-                        <div class="dropdown-1">
+        <nav id="navbar" aria-label="Primary navigation">
+            <a class="logo" href="./index.html">Muyao Kong</a>
+            <button class="menu-toggle" type="button" aria-expanded="false"
+                aria-controls="primary-navigation" aria-label="Open navigation">
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+                <span class="menu-toggle-bar"></span>
+            </button>
+            <div class="nav-menu" id="primary-navigation">
+                <ul class="nav-links">
+                    <li class="nav-item nav-item--dropdown">
+                        <button class="nav-group-toggle" type="button" aria-expanded="false"
+                            aria-controls="bio-navigation">
+                            Bio <span class="nav-chevron" aria-hidden="true"></span>
+                        </button>
+                        <ul class="nav-dropdown" id="bio-navigation">
                             <li><a href="./pages/research/research.html">Research</a></li>
                             <li><a href="./pages/education/education.html">Education</a></li>
                             <li><a href="./pages/experiences/experiences.html">Experiences</a></li>
                             <li><a href="./pages/resume/resume.html">Resume</a></li>
-                        </div>
-                    </ul>
-                </li>
-
-                <li><a href="">Stay in touch</a>
-                    <ul>
-                        <div class="dropdown-2">
-                            <li><a href="./pages/contact-info/contact-info.html">Contact Info</a></li>
-                        </div>
-                        
-                    </ul>
-                </li>
-            </ul>
-            
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contact-info/contact-info.html">Contact Info</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
 
         <main id="contents">
@@ -63,12 +65,7 @@
                 </ul>
             </div>
         </main>
-        
-        
-        
-
+        <script src="./index.js"></script>
+        <script src="./assets/site-nav.js?v=20260608-2"></script>
     </body>
-
-    <script src="./index.js"></script>
-
 </html>
