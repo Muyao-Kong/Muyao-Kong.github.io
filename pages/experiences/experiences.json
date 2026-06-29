@@ -1,11 +1,20 @@
 {
     "interns": [
         {
+            "name": "Alibaba Group",
+            "logo_1x": "../../assets/alibaba.svg",
+            "logo_2x": "../../assets/alibaba.svg",
+            "duration": "Jun 2026 - Present",
+            "position": "Artificial Intelligence Intern",
+            "description": ""
+        },
+
+        {
             "name": "National Supercomputing Center in Jinan",
             "logo_1x": "../../assets/nsccjn-480.png",
             "logo_2x": "../../assets/nsccjn.png",
             "duration": "Jun 2024 - Aug 2024",
-            "position": "Algorithms and data analyst",
+            "position": "Algorithms and Data Analyst",
             "description": "- <div class='bold'>Cleaned</div> time series device data; constructed data anomaly detection and localization algorithms to locate and process abnormal data data using <div class='bold'>Huber Regressor</div> in <div class='bold'>robust regression</div>.\n- Built <div class='bold'>ICC (Intraclass Correlation)</div> data consistency check algorithms, made judgment of consistency on the historical data of multiple related devices.\n- Built machine learning <div class='bold'>ARIMA (Autoregressive Integrated Moving Average)</div> model, used the constructed ARIMA model to forecast the <div class='bold'>time series</div> device data.\n- Wrote Python automation script for timed processing of device data, handled timed database read/write using <div class='bold'>PyMySQL</div>, and processed the retrieved device data from MySQL database."
         },
 
@@ -14,7 +23,7 @@
             "logo_1x": "../../assets/china-cinda.png",
             "logo_2x": "../../assets/china-cinda.png",
             "duration": "Jun 2025 - Aug 2025",
-            "position": "Risk management intern",
+            "position": "Risk Management Intern",
             "description": "- Synthesized industry and internal case materials on distressed asset resolution (e.g., debt-to-equity swaps, auctions, restructurings) and distilled key risk factors into reusable briefings for internal reference.\n- Compiled and standardized annual report data across 18 financial institutions including banks, AMCs and brokers, extracting and consolidating key financial and disclosure items into structured datasets for analysis.\n- Performed basic cross-company and time-series comparisons (leverage, liquidity, profitability quality, impairments, contingencies) and drafted concise risk highlights to support internal documentation.\n- Operated under strict data-access and compliance constraints, focusing on public disclosures and documentation workflows to improve traceability and retrieval efficiency."
         }
 
