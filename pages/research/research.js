@@ -27,6 +27,44 @@ function renderParagraphSection(sectionData) {
     researchInfo.appendChild(section);
 }
 
+function renderProjectSection(sectionData) {
+    if (!sectionData || !Array.isArray(sectionData.projects)) {
+        return;
+    }
+
+    const section = document.createElement("section");
+    section.className = "research-section";
+    addHeading(section, sectionData.title);
+
+    sectionData.projects.forEach(projectData => {
+        const article = document.createElement("article");
+        article.className = "research-project";
+
+        const projectTitle = document.createElement("h2");
+        projectTitle.textContent = projectData.name;
+        article.appendChild(projectTitle);
+
+        const role = document.createElement("p");
+        role.className = "research-role";
+        role.textContent = projectData.role;
+        article.appendChild(role);
+
+        const details = document.createElement("ul");
+        projectData.description.forEach(descriptionText => {
+            const item = document.createElement("li");
+            const paragraph = document.createElement("p");
+            paragraph.textContent = descriptionText;
+            item.appendChild(paragraph);
+            details.appendChild(item);
+        });
+        article.appendChild(details);
+
+        section.appendChild(article);
+    });
+
+    researchInfo.appendChild(section);
+}
+
 function renderPublicationSection(sectionData) {
     const section = document.createElement("section");
     section.className = "research-section";
@@ -55,6 +93,7 @@ function fetchResearch() {
         })
         .then(data => {
             renderParagraphSection(data.research_interest);
+            renderProjectSection(data.research_projects);
             renderPublicationSection(data.publications_and_manuscripts);
         })
         .catch(error => {

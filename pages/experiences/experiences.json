@@ -4,18 +4,18 @@
             "name": "Alibaba Group",
             "logo_1x": "../../assets/alibaba.svg",
             "logo_2x": "../../assets/alibaba.svg",
-            "duration": "Jun 2026 - Present",
+            "duration": "Jun 2024 - Jul 2024",
             "position": "Artificial Intelligence Intern",
-            "description": ""
+            "description": "- <div class='bold'>Deployed</div> local SD1.5 pipeline and built full-stack web system for avatar generation. Constructed mapping rules from structured parameters to diffusion prompts, and benchmarked performance and hardware requirements of mainstream generative models including <div class='bold'>Stable Diffusion</div> and <div class='bold'>Flux</div>.\n- Leveraged <div class='bold'>Hy-MT2-7B</div> and <div class='bold'>Qwen3-4B</div> models to optimize prompt engineering. Designed incremental semantic merging strategies to resolve semantic conflicts and redundant descriptions in multi-round generation, and summarized stable model tuning solutions through comparative tests of CFG scale, sampling steps and seed parameters.\n- Implemented <div class='bold'>T2I</div> and <div class='bold'>img2img</div> generation pipelines, and adapted dual inference backends including local Stable Diffusion and ComfyUI. Designed interface fields for historical prompts, incremental instructions and denoising strength to support end-to-end iterative image editing with subject consistency.\n- Optimized denoising strength thresholds for img2img iteration. Established classification rules for instruction addition, replacement and deletion to mitigate feature drift and semantic conflicts, improving the stability and accuracy of iterative image modification.\n- Conducted full-scene testing and iterative optimization of multimodal generation system. Built prompt conflict resolution mechanisms based on hard constraints and user latest intentions, and sorted out test cases and regression documents to enhance system stability and maintainability."
         },
 
         {
-            "name": "National Supercomputing Center in Jinan",
+            "name": "National Supercomputing Center",
             "logo_1x": "../../assets/nsccjn-480.png",
             "logo_2x": "../../assets/nsccjn.png",
             "duration": "Jun 2024 - Aug 2024",
-            "position": "Algorithms and Data Analyst",
-            "description": "- <div class='bold'>Cleaned</div> time series device data; constructed data anomaly detection and localization algorithms to locate and process abnormal data data using <div class='bold'>Huber Regressor</div> in <div class='bold'>robust regression</div>.\n- Built <div class='bold'>ICC (Intraclass Correlation)</div> data consistency check algorithms, made judgment of consistency on the historical data of multiple related devices.\n- Built machine learning <div class='bold'>ARIMA (Autoregressive Integrated Moving Average)</div> model, used the constructed ARIMA model to forecast the <div class='bold'>time series</div> device data.\n- Wrote Python automation script for timed processing of device data, handled timed database read/write using <div class='bold'>PyMySQL</div>, and processed the retrieved device data from MySQL database."
+            "position": "Algorithm and Data Analyst Intern",
+            "description": "- <div class='bold'>Cleaned</div> time series device data; constructed data anomaly detection and localization algorithms to locate and process abnormal data using <div class='bold'>Huber Regressor</div> in <div class='bold'>robust regression</div>.\n- Built <div class='bold'>ICC (Intraclass Correlation)</div> data consistency check algorithms, made judgment of consistency on the historical data of multiple related devices.\n- Built machine learning <div class='bold'>ARIMA (Autoregressive Integrated Moving Average)</div> model, used the constructed ARIMA model to forecast the <div class='bold'>time series</div> device data.\n- Wrote Python automation script for timed processing of device data, handled timed database read/write using <div class='bold'>PyMySQL</div>, and processed the retrieved device data from MySQL database."
         },
 
         {

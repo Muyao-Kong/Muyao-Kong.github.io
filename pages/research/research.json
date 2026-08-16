@@ -2,14 +2,51 @@
     "research_interest": {
         "title": "Research Interest",
         "paragraphs": [
-            "large language models, natural language generation, representation learning"
+            "large language models, natural language generation, contextual language understanding, Chinese vague-time reasoning, and grade-calibrated explanations"
+        ]
+    },
+    "research_projects": {
+        "title": "Research Projects",
+        "projects": [
+            {
+                "name": "Read the Room Before Your Model Generates",
+                "role": "Project Lead and Researcher",
+                "description": [
+                    "Proposed Scenario-Actor, a framework that selects LLM decoding temperature from the communicative scenario before generation.",
+                    "Designed Scenarize to map r-th layer Transformer hidden states into an interpretable scenario embedding representing conversational context.",
+                    "Designed Actout, a scenario-axis readout function that maps scenario embeddings to scalar decoding temperatures.",
+                    "Designed a triplet-supervised training setup to learn scenario embeddings from relative differences among communicative contexts."
+                ]
+            },
+            {
+                "name": "CVTime: Do LLMs Understand Chinese Vague Time Expressions in Context?",
+                "role": "Researcher",
+                "description": [
+                    "Introduced CVTime, the first systematic benchmark for evaluating LLM understanding of modern, cultural, and classical Chinese vague duration expressions.",
+                    "Constructed 252 base items and 756 prompts covering default interpretation, contextual adjustment, fictional-rule following, source-grounded reasoning, and relative comparison.",
+                    "Collected 3,024 responses from 21 annotators and preserved full response distributions to capture variation in human judgments rather than using a fixed time band.",
+                    "Evaluated six LLMs with four main metrics - human-LLM agreement, ordinal distance, context-shift agreement, rule accuracy - and robustness analysis with three prompt variants and different answer orders.",
+                    "Found limited human-LLM agreement and scaling effect in model size within both Qwen and Llama families, and no reliable improvement from natural context."
+                ]
+            },
+            {
+                "name": "Generate-then-Rerank Under Subjective Labels: Decomposing Generation and Selection Levers for Grade-Calibrated LLM Explanations",
+                "role": "Researcher",
+                "description": [
+                    "Developed a generate-then-rerank framework for subjective perceived-grade matching, separating generation and selection effects across Elementary, High School, and Graduate explanations.",
+                    "Built a fine-tuned DistilBERT perceived-grade reranker, outperforming the strongest feature-based scorer by 7 to 13 percentage points in paired rank accuracy within each question.",
+                    "Developed a diagnostic using mean pool quality and within-cell correlation to identify generation- and selection-side bottlenecks and quantify a 14.1-point oracle gap.",
+                    "Conducted three human-annotation studies with over 30,000 votes, finding the best measured sampling temperature at T=1.5 and a gain of 6.2 points on deployment share from reranking."
+                ]
+            }
         ]
     },
     "publications_and_manuscripts": {
         "title": "Publications and Manuscripts",
         "publications": [
             "[1] Muyao Kong, and Zhihao Lin. \"Read the Room Before Your Model Generates.\" Under review at the Conference on Empirical Methods in Natural Language Processing (EMNLP), 2026.",
-            "[2] Muqiao Tao, Muyao Kong, and Qitian Xiong. \"Generate-then-Rerank for Pedagogically Calibrated Language-Model Explanations.\" 2026 (manuscript in preparation)."
+            "[2] Muyao Kong. \"CVTime: Do LLMs Understand Chinese Vague Time Expressions in Context?\" 2026 (manuscript in preparation).",
+            "[3] Muqiao Tao, Muyao Kong, and Qitian Xiong. \"Generate-then-Rerank Under Subjective Labels: Decomposing Generation and Selection Levers for Grade-Calibrated LLM Explanation.\" Under review at ARR August, 2026."
         ]
     }
 }
