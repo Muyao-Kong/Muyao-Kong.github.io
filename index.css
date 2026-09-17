@@ -264,6 +264,10 @@ md我已经尽力了 */
     font-weight: 500;
 }
 
+#general-info .publication-venue {
+    font-style: italic;
+}
+
 /* Tablet (768px and below) */
 @media (max-width: 768px) {
     #navbar {

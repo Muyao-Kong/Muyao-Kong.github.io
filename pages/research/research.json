@@ -44,7 +44,16 @@
     "publications_and_manuscripts": {
         "title": "Publications and Manuscripts",
         "publications": [
-            "[1] Muyao Kong, and Zhihao Lin. \"Read the Room Before Your Model Generates.\" Under review.",
+            {
+                "segments": [
+                    "[1] Muyao Kong, and Zhihao Lin. \"Read the Room Before Your Model Generates.\" ",
+                    {
+                        "kind": "venue",
+                        "text": "AACL-IJCNLP 2026 (Main Conference)"
+                    },
+                    ". Accepted."
+                ]
+            },
             "[2] Muyao Kong. \"CVTime: Do LLMs Understand Chinese Vague Time Expressions in Context?\" 2026 (manuscript in preparation).",
             "[3] Muqiao Tao, Muyao Kong, and Qitian Xiong. \"Generate-then-Rerank Under Subjective Labels: Decomposing Generation and Selection Levers for Grade-Calibrated LLM Explanation.\" Under review."
         ]

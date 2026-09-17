@@ -65,6 +65,33 @@ function renderProjectSection(sectionData) {
     researchInfo.appendChild(section);
 }
 
+function appendPublicationSegment(paragraph, segment) {
+    if (typeof segment === "string") {
+        paragraph.appendChild(document.createTextNode(segment));
+        return;
+    }
+
+    const span = document.createElement("span");
+    span.textContent = segment.text || "";
+
+    if (segment.kind === "venue") {
+        span.className = "publication-venue";
+    }
+
+    paragraph.appendChild(span);
+}
+
+function renderPublicationText(paragraph, publication) {
+    if (typeof publication === "string") {
+        paragraph.textContent = publication;
+        return;
+    }
+
+    publication.segments.forEach(segment => {
+        appendPublicationSegment(paragraph, segment);
+    });
+}
+
 function renderPublicationSection(sectionData) {
     const section = document.createElement("section");
     section.className = "research-section";
@@ -74,7 +101,7 @@ function renderPublicationSection(sectionData) {
     sectionData.publications.forEach(publicationText => {
         const item = document.createElement("li");
         const paragraph = document.createElement("p");
-        paragraph.textContent = publicationText;
+        renderPublicationText(paragraph, publicationText);
         item.appendChild(paragraph);
         list.appendChild(item);
     });

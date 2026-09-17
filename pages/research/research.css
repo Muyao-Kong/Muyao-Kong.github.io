@@ -72,6 +72,10 @@
     padding: 0;
 }
 
+#contents .publication-venue {
+    font-style: italic;
+}
+
 /* Tablet (768px and below) */
 @media (max-width: 768px) {
     #navbar {
