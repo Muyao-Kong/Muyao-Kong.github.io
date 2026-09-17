@@ -71,13 +71,16 @@ function appendPublicationSegment(paragraph, segment) {
         return;
     }
 
-    const span = document.createElement("span");
-    span.textContent = segment.text || "";
-
     if (segment.kind === "venue") {
-        span.className = "publication-venue";
+        const emphasis = document.createElement("em");
+        emphasis.className = "publication-venue";
+        emphasis.textContent = segment.text || "";
+        paragraph.appendChild(emphasis);
+        return;
     }
 
+    const span = document.createElement("span");
+    span.textContent = segment.text || "";
     paragraph.appendChild(span);
 }
 
