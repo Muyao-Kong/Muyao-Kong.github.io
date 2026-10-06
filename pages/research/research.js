@@ -113,7 +113,7 @@ function renderPublicationSection(sectionData) {
 }
 
 function fetchResearch() {
-    fetch("./research.json?v=20261005-1")
+    fetch("./research.json?v=20261005-3")
         .then(res => {
             if (!res.ok) {
                 throw new Error("network response was not ok");

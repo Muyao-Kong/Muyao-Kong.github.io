@@ -9,7 +9,7 @@
         "title": "Research Projects",
         "projects": [
             {
-                "name": "Read the Room Before Your Model Generates",
+                "name": "Scenario-Actor: Scenario-adaptive Decoding",
                 "role": "Project Lead and Researcher",
                 "description": [
                     "Proposed Scenario-Actor, a framework that selects LLM decoding temperature from the communicative scenario before generation.",
@@ -19,7 +19,7 @@
                 ]
             },
             {
-                "name": "CVTime: Benchmarking LLMs' Understanding of Chinese Vague Time Expressions",
+                "name": "CVTime: Benchmarking LLMs’ Understanding of Chinese Vague Time Expressions",
                 "role": "Researcher",
                 "description": [
                     "Introduced CVTime, the first systematic benchmark for evaluating LLM understanding of modern, cultural, and classical Chinese vague duration expressions.",
@@ -60,7 +60,7 @@
                     ". Accepted."
                 ]
             },
-            "[2] Muyao Kong. \"CVTime: Do LLMs Understand Chinese Vague Time Expressions in Context?\" Under review.",
+            "[2] Muyao Kong. \"CVTime: Benchmarking LLMs’ Understanding of Chinese Vague Time Expressions\" Under review.",
             "[3] Muqiao Tao, Muyao Kong, and Qitian Xiong. \"Generate-then-Rerank Under Subjective Labels: Decomposing Generation and Selection Levers for Grade-Calibrated LLM Explanation.\" Under review."
         ]
     }
