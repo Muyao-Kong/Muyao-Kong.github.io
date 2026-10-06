@@ -1,7 +1,8 @@
 const logoImgHTML = document.querySelector(".logo");
 const internsHTML = document.querySelector(".interns");
+const researchExperiencesHTML = document.querySelector(".research-experiences");
 
-const experincePromise = fetch('./experiences.json');
+const experincePromise = fetch('./experiences.json?v=20261005-1');
 ////-------------------------------窗口-------------------------------
 function logoToHomepage(){
     logoImgHTML.addEventListener("click", () => {
@@ -10,29 +11,21 @@ function logoToHomepage(){
 }
 
 //-------------------------------以下是experience的数据和方法-------------------------------
-function displayExperiences(){
-    experincePromise.then(res => {
-        if (!res.ok) {
-            throw new Error("network is not ok" + res.statusText);
+function renderExperiences(container, jobs) {
+    var internsHTMLList = container.querySelector("ul");
+    var internsData = jobs || [];
+    var internsString = "";
+
+    for (const job of internsData) {
+
+        let jobDescriptionHTML = "";
+        const jobDescriptions = job.description ? job.description.split("\n") : [];
+        // Generate description list items
+        for (const jobDescription of jobDescriptions) {
+            jobDescriptionHTML += `${jobDescription}<br>`;
         }
-        return res.json();
-    })
-    .then(data => {
 
-        var internsHTMLList = internsHTML.querySelector("ul");
-        var internsData = data.interns || [];
-        var internsString = "";
-
-        for (const job of internsData) {
-
-            let jobDescriptionHTML = "";
-            const jobDescriptions = job.description.split("\n");
-            // Generate description list items
-            for (const jobDescription of jobDescriptions) {
-                jobDescriptionHTML += `${jobDescription}<br>`;
-            }
-
-            internsString += `
+        internsString += `
             <li>
                 <div class="company">
                     <div class="left">
@@ -47,12 +40,24 @@ function displayExperiences(){
                 </div>
                 <div class="detailed-info hidden">
                     <div class="position"> <p>${job.position}</p> </div>
-                    <div class="description"><span>${jobDescriptionHTML}</span></div>
+                    ${jobDescriptionHTML ? `<div class="description"><span>${jobDescriptionHTML}</span></div>` : ""}
                 </div>
             </li>
         `
+    }
+    internsHTMLList.innerHTML = internsString;
+}
+
+function displayExperiences(){
+    experincePromise.then(res => {
+        if (!res.ok) {
+            throw new Error("network is not ok" + res.statusText);
         }
-        internsHTMLList.innerHTML += internsString;
+        return res.json();
+    })
+    .then(data => {
+        renderExperiences(researchExperiencesHTML, data.research_experiences);
+        renderExperiences(internsHTML, data.interns);
     })
 }
 

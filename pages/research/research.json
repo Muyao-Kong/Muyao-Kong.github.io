@@ -19,15 +19,21 @@
                 ]
             },
             {
-                "name": "CVTime: Do LLMs Understand Chinese Vague Time Expressions in Context?",
+                "name": "CVTime: Benchmarking LLMs' Understanding of Chinese Vague Time Expressions",
                 "role": "Researcher",
                 "description": [
                     "Introduced CVTime, the first systematic benchmark for evaluating LLM understanding of modern, cultural, and classical Chinese vague duration expressions.",
                     "Constructed 252 base items and 756 prompts covering default interpretation, contextual adjustment, fictional-rule following, source-grounded reasoning, and relative comparison.",
                     "Collected 3,024 responses from 21 annotators and preserved full response distributions to capture variation in human judgments rather than using a fixed time band.",
                     "Evaluated six LLMs with four main metrics - human-LLM agreement, ordinal distance, context-shift agreement, rule accuracy - and robustness analysis with three prompt variants and different answer orders.",
-                    "Found limited human-LLM agreement and scaling effect in model size within both Qwen and Llama families, and no reliable improvement from natural context."
+                    "Found limited human-LLM agreement and scaling effect in model size within both Qwen and Llama families, and no reliable improvement from natural context.",
+                    "The work is under review."
                 ]
+            },
+            {
+                "name": "The Termolator",
+                "role": "Research Assistant",
+                "description": []
             },
             {
                 "name": "Generate-then-Rerank Under Subjective Labels: Decomposing Generation and Selection Levers for Grade-Calibrated LLM Explanations",
@@ -54,7 +60,7 @@
                     ". Accepted."
                 ]
             },
-            "[2] Muyao Kong. \"CVTime: Do LLMs Understand Chinese Vague Time Expressions in Context?\" 2026 (manuscript in preparation).",
+            "[2] Muyao Kong. \"CVTime: Do LLMs Understand Chinese Vague Time Expressions in Context?\" Under review.",
             "[3] Muqiao Tao, Muyao Kong, and Qitian Xiong. \"Generate-then-Rerank Under Subjective Labels: Decomposing Generation and Selection Levers for Grade-Calibrated LLM Explanation.\" Under review."
         ]
     }

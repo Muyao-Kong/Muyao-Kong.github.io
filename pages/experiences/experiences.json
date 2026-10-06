@@ -1,4 +1,14 @@
 {
+    "research_experiences": [
+        {
+            "name": "NYU Courant",
+            "logo_1x": "../../assets/nyu-courant.jpg",
+            "logo_2x": "../../assets/nyu-courant.jpg",
+            "duration": "Sept 2026 - Present",
+            "position": "Research Assistant",
+            "description": ""
+        }
+    ],
     "interns": [
         {
             "name": "Alibaba Group",

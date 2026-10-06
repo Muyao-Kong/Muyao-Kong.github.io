@@ -156,6 +156,10 @@ md我已经尽力了 */
     font-weight: 500;
 }
 
+#contents .experience-section + .experience-section {
+    margin-top: 44px;
+}
+
 #contents ul {
     padding: 0px;
 }
@@ -229,6 +233,10 @@ md我已经尽力了 */
 
 /* Tablet (768px and below) */
 @media (max-width: 768px) {
+    #contents .experience-section + .experience-section {
+        margin-top: 32px;
+    }
+
     #navbar {
         padding: 0 24px;
         height: 70px;
@@ -296,6 +304,10 @@ md我已经尽力了 */
 
 /* Mobile (480px and below) */
 @media (max-width: 480px) {
+    #contents .experience-section + .experience-section {
+        margin-top: 24px;
+    }
+
     #navbar {
         padding: 0 16px;
         height: 65px;

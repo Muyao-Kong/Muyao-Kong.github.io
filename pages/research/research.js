@@ -49,15 +49,17 @@ function renderProjectSection(sectionData) {
         role.textContent = projectData.role;
         article.appendChild(role);
 
-        const details = document.createElement("ul");
-        projectData.description.forEach(descriptionText => {
-            const item = document.createElement("li");
-            const paragraph = document.createElement("p");
-            paragraph.textContent = descriptionText;
-            item.appendChild(paragraph);
-            details.appendChild(item);
-        });
-        article.appendChild(details);
+        if (projectData.description.length > 0) {
+            const details = document.createElement("ul");
+            projectData.description.forEach(descriptionText => {
+                const item = document.createElement("li");
+                const paragraph = document.createElement("p");
+                paragraph.textContent = descriptionText;
+                item.appendChild(paragraph);
+                details.appendChild(item);
+            });
+            article.appendChild(details);
+        }
 
         section.appendChild(article);
     });
@@ -111,7 +113,7 @@ function renderPublicationSection(sectionData) {
 }
 
 function fetchResearch() {
-    fetch("./research.json")
+    fetch("./research.json?v=20261005-1")
         .then(res => {
             if (!res.ok) {
                 throw new Error("network response was not ok");
