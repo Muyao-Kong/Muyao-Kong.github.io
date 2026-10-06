@@ -2,7 +2,7 @@
     "research_interest": {
         "title": "Research Interest",
         "paragraphs": [
-            "large language models, natural language generation"
+            "Deep learning methods, large language models (LLMs), natural language processing, theory of deep learning"
         ]
     },
     "research_projects": {
@@ -25,8 +25,7 @@
                     "Constructed 252 base items and 756 prompts covering default interpretation, contextual adjustment, fictional-rule following, source-grounded reasoning, and relative comparison.",
                     "Collected 3,024 responses from 21 annotators and preserved full response distributions to capture variation in human judgments rather than using a fixed time band.",
                     "Evaluated six LLMs with four main metrics - human-LLM agreement, ordinal distance, context-shift agreement, rule accuracy - and robustness analysis with three prompt variants and different answer orders.",
-                    "Found limited human-LLM agreement and scaling effect in model size within both Qwen and Llama families, and no reliable improvement from natural context.",
-                    "The work is under review."
+                    "Found limited human-LLM agreement and scaling effect in model size within both Qwen and Llama families, and no reliable improvement from natural context."
                 ]
             },
             {
