@@ -10,7 +10,7 @@
         "projects": [
             {
                 "name": "Scenario-Actor: Scenario-adaptive Decoding",
-                "role": "Project Lead and Researcher",
+                "role": "Project Lead",
                 "description": [
                     "Proposed Scenario-Actor, a framework that selects LLM decoding temperature from the communicative scenario before generation.",
                     "Designed Scenarize to map r-th layer Transformer hidden states into an interpretable scenario embedding representing conversational context.",
@@ -20,7 +20,6 @@
             },
             {
                 "name": "CVTime: Benchmarking LLMs’ Understanding of Chinese Vague Time Expressions",
-                "role": "Researcher",
                 "description": [
                     "Introduced CVTime, the first systematic benchmark for evaluating LLM understanding of modern, cultural, and classical Chinese vague duration expressions.",
                     "Constructed 252 base items and 756 prompts covering default interpretation, contextual adjustment, fictional-rule following, source-grounded reasoning, and relative comparison.",

@@ -44,10 +44,12 @@ function renderProjectSection(sectionData) {
         projectTitle.textContent = projectData.name;
         article.appendChild(projectTitle);
 
-        const role = document.createElement("p");
-        role.className = "research-role";
-        role.textContent = projectData.role;
-        article.appendChild(role);
+        if (projectData.role) {
+            const role = document.createElement("p");
+            role.className = "research-role";
+            role.textContent = projectData.role;
+            article.appendChild(role);
+        }
 
         if (projectData.description.length > 0) {
             const details = document.createElement("ul");
@@ -113,7 +115,7 @@ function renderPublicationSection(sectionData) {
 }
 
 function fetchResearch() {
-    fetch("./research.json?v=20261005-3")
+    fetch("./research.json?v=20261005-4")
         .then(res => {
             if (!res.ok) {
                 throw new Error("network response was not ok");
