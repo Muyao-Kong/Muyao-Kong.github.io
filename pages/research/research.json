@@ -1,4 +1,10 @@
 {
+    "research_statement": {
+        "paragraphs": [
+            "One remarkable ability of intelligence is how much it can do with so little. We human beings can build abstractions from limited experience, reuse knowledge in unfamiliar problems, and infer patterns from just a few examples. Modern machine intelligence, especially language models, takes a different path. Its most successful systems increasingly rely on massive datasets and general architectures. Though this strategy has produced extraordinary results, it leads to mechanisms that even today we can not fully understand.",
+            "Behind the complexity of intelligent behavior, I believe there are often much simpler principles to be investigated. My research aims to discover these principles for how models represent, learn, and reason, and to turn them into more capable, efficient, and interpretable learning systems. I pursue this goal through four connected directions: evaluating current models' behavior or probe their latent representations, studying how learned features and internal structure emerge, developing new deep learning methods, and eventually, building models that can fully integrate in the human world."
+        ]
+    },
     "research_interest": {
         "title": "Research Interest",
         "paragraphs": [

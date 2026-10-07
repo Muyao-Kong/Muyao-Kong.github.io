@@ -16,7 +16,9 @@ function addHeading(section, title) {
 function renderParagraphSection(sectionData) {
     const section = document.createElement("section");
     section.className = "research-section";
-    addHeading(section, sectionData.title);
+    if (sectionData.title) {
+        addHeading(section, sectionData.title);
+    }
 
     sectionData.paragraphs.forEach(paragraphText => {
         const paragraph = document.createElement("p");
@@ -115,7 +117,8 @@ function renderPublicationSection(sectionData) {
 }
 
 function fetchResearch() {
-    fetch("./research.json?v=20261005-4")
+    const dataSource = researchInfo.dataset.source || "./research.json";
+    fetch(`${dataSource}?v=20261007-2`)
         .then(res => {
             if (!res.ok) {
                 throw new Error("network response was not ok");
@@ -123,9 +126,14 @@ function fetchResearch() {
             return res.json();
         })
         .then(data => {
+            if (researchInfo.dataset.view === "publications") {
+                renderPublicationSection(data.publications_and_manuscripts);
+                return;
+            }
+
+            renderParagraphSection(data.research_statement);
             renderParagraphSection(data.research_interest);
             renderProjectSection(data.research_projects);
-            renderPublicationSection(data.publications_and_manuscripts);
         })
         .catch(error => {
             console.error("There has been a problem with your fetch operation:", error);
