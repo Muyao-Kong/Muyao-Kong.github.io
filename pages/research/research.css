@@ -61,7 +61,7 @@
 
 #contents .research-project-body {
     display: grid;
-    grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+    grid-template-columns: minmax(0, 1fr) min(40%, 420px);
     gap: 32px;
     align-items: center;
 }
