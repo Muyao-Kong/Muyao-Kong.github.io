@@ -17,6 +17,13 @@
             {
                 "name": "Scenario-Actor: Scenario-adaptive Decoding",
                 "role": "Project Lead",
+                "figure": {
+                    "src": "../../assets/Scenario-Actor.png",
+                    "pdf": "../../assets/Scenario-Actor.pdf",
+                    "alt": "Scenario-Actor framework: Scenarize maps Transformer hidden states to scenario embeddings, and Actout selects the sampling temperature.",
+                    "width": 471,
+                    "height": 498
+                },
                 "description": [
                     "Proposed Scenario-Actor, a framework that selects LLM decoding temperature from the communicative scenario before generation.",
                     "Designed Scenarize to map r-th layer Transformer hidden states into an interpretable scenario embedding representing conversational context.",

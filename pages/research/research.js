@@ -53,6 +53,15 @@ function renderProjectSection(sectionData) {
             article.appendChild(role);
         }
 
+        const projectBody = projectData.figure ? document.createElement("div") : article;
+        const projectCopy = projectData.figure ? document.createElement("div") : article;
+        if (projectData.figure) {
+            projectBody.className = "research-project-body";
+            projectCopy.className = "research-project-copy";
+            projectBody.appendChild(projectCopy);
+            article.appendChild(projectBody);
+        }
+
         if (projectData.description.length > 0) {
             const details = document.createElement("ul");
             projectData.description.forEach(descriptionText => {
@@ -62,7 +71,29 @@ function renderProjectSection(sectionData) {
                 item.appendChild(paragraph);
                 details.appendChild(item);
             });
-            article.appendChild(details);
+            projectCopy.appendChild(details);
+        }
+
+        if (projectData.figure) {
+            const figure = document.createElement("figure");
+            figure.className = "research-figure";
+
+            const link = document.createElement("a");
+            link.href = projectData.figure.pdf;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.title = "View the original diagram (PDF)";
+
+            const image = document.createElement("img");
+            image.src = projectData.figure.src;
+            image.alt = projectData.figure.alt;
+            image.width = projectData.figure.width;
+            image.height = projectData.figure.height;
+            image.loading = "lazy";
+            image.decoding = "async";
+            link.appendChild(image);
+            figure.appendChild(link);
+            projectBody.appendChild(figure);
         }
 
         section.appendChild(article);
@@ -118,7 +149,7 @@ function renderPublicationSection(sectionData) {
 
 function fetchResearch() {
     const dataSource = researchInfo.dataset.source || "./research.json";
-    fetch(`${dataSource}?v=20261007-2`)
+    fetch(`${dataSource}?v=20261007-6`)
         .then(res => {
             if (!res.ok) {
                 throw new Error("network response was not ok");
