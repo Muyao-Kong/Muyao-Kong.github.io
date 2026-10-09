@@ -149,7 +149,7 @@ function renderPublicationSection(sectionData) {
 
 function fetchResearch() {
     const dataSource = researchInfo.dataset.source || "./research.json";
-    fetch(`${dataSource}?v=20261007-6`)
+    fetch(`${dataSource}?v=20261009-1`)
         .then(res => {
             if (!res.ok) {
                 throw new Error("network response was not ok");

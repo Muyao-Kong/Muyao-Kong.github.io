@@ -45,16 +45,6 @@
                 "name": "The Termolator",
                 "role": "Research Assistant",
                 "description": []
-            },
-            {
-                "name": "Generate-then-Rerank Under Subjective Labels: Decomposing Generation and Selection Levers for Grade-Calibrated LLM Explanations",
-                "role": "Researcher",
-                "description": [
-                    "Developed a generate-then-rerank framework for subjective perceived-grade matching, separating generation and selection effects across Elementary, High School, and Graduate explanations.",
-                    "Built a fine-tuned DistilBERT perceived-grade reranker, outperforming the strongest feature-based scorer by 7 to 13 percentage points in paired rank accuracy within each question.",
-                    "Developed a diagnostic using mean pool quality and within-cell correlation to identify generation- and selection-side bottlenecks and quantify a 14.1-point oracle gap.",
-                    "Conducted three human-annotation studies with over 30,000 votes, finding the best measured sampling temperature at T=1.5 and a gain of 6.2 points on deployment share from reranking."
-                ]
             }
         ]
     },
@@ -71,8 +61,7 @@
                     ". Accepted."
                 ]
             },
-            "[2] Muyao Kong. \"CVTime: Benchmarking LLMs’ Understanding of Chinese Vague Time Expressions\" Under review.",
-            "[3] Muqiao Tao, Muyao Kong, and Qitian Xiong. \"Generate-then-Rerank Under Subjective Labels: Decomposing Generation and Selection Levers for Grade-Calibrated LLM Explanation.\" Under review."
+            "[2] Muyao Kong. \"CVTime: Benchmarking LLMs’ Understanding of Chinese Vague Time Expressions\" Under review."
         ]
     }
 }
