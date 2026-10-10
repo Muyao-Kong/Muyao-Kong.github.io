@@ -264,6 +264,22 @@ md我已经尽力了 */
     font-weight: 300;
 }
 
+#news ul {
+    padding-left: 1.1em;
+}
+
+#news ul li {
+    list-style: disc;
+}
+
+#news ul li::marker {
+    font-size: 0.65em;
+}
+
+#news + #general-info {
+    margin-top: 48px;
+}
+
 #general-info .publication-author {
     font-weight: 500;
 }
