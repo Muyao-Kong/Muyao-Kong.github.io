@@ -276,8 +276,8 @@ md我已经尽力了 */
     font-size: 0.65em;
 }
 
-#news + #general-info {
-    margin-top: 48px;
+#news time {
+    font-weight: 500;
 }
 
 #general-info .publication-author {
