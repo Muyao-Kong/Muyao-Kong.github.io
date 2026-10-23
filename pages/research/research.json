@@ -56,9 +56,8 @@
                     "[1] Muyao Kong, and Zhihao Lin. \"Read the Room Before Your Model Generates.\" ",
                     {
                         "kind": "venue",
-                        "text": "AACL-IJCNLP 2026 (Main Conference)"
-                    },
-                    ". Accepted."
+                        "text": "AACL-IJCNLP 2026 Oral"
+                    }
                 ]
             },
             "[2] Muyao Kong. \"CVTime: Do LLMs Understand Chinese Vague Time Expressions in Context?\" Under review."

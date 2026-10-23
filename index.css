@@ -243,21 +243,18 @@ md我已经尽力了 */
     margin-bottom: 3vh;
 }
 
-#news h1,
-#general-info h1 {
+#news h1 {
     font-size: var(--font-size-section-title);
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
 }
 
-#news ul li,
-#general-info ul li{
+#news ul li {
     margin-top: 20px;
     list-style: none;
 }
 
-#news ul li p,
-#general-info ul li p {
+#news ul li p {
     padding: 7px 0;
     font-size: var(--font-size-body);
     font-family: 'Raleway', sans-serif;
@@ -276,16 +273,9 @@ md我已经尽力了 */
     font-size: 0.65em;
 }
 
-#news time {
+#news time,
+#news .news-highlight {
     font-weight: 500;
-}
-
-#general-info .publication-author {
-    font-weight: 500;
-}
-
-#general-info .publication-venue {
-    font-style: italic;
 }
 
 /* Tablet (768px and below) */
@@ -357,13 +347,11 @@ md我已经尽力了 */
         aspect-ratio: 1 / 1;
     }
 
-    #news h1,
-    #general-info h1 {
+    #news h1 {
         font-size: var(--font-size-section-title);
     }
 
-    #news ul li p,
-    #general-info ul li p {
+    #news ul li p {
         font-size: var(--font-size-body);
     }
 }
@@ -440,18 +428,15 @@ md我已经尽力了 */
         margin-bottom: 2vh;
     }
 
-    #news h1,
-    #general-info h1 {
+    #news h1 {
         font-size: var(--font-size-section-title);
     }
 
-    #news ul li,
-    #general-info ul li {
+    #news ul li {
         margin-top: 16px;
     }
 
-    #news ul li p,
-    #general-info ul li p {
+    #news ul li p {
         font-size: var(--font-size-body);
         line-height: 1.5;
     }
