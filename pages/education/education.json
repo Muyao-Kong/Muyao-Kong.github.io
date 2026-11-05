@@ -4,15 +4,23 @@
         "logo_1x": "../../assets/nyu-480.png",
         "logo_2x": "../../assets/nyu.png",
         "location": "New York, NY",
-        "graduation_date": "May 2027",
+        "graduation_date": "Expected Dec 2026",
         "gpa": [
 
         ],
-        "degree": "bachelor",
+        "degree": "B.A.",
         "major": "Computer Science",
         "minor": "Mathematics",
         "more": [
-            "Dean's list"
+            "Dean's List"
+        ],
+        "coursework": [
+            "Natural Language Processing with Representation Learning",
+            "Probability & Statistics",
+            "Linear Algebra",
+            "Basic Algorithm",
+            "Discrete Math",
+            "Data Structures"
         ]
         
     },

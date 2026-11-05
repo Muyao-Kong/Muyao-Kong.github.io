@@ -201,6 +201,17 @@ body {
     transform: translateY(2px) rotate(225deg);
 }
 
+@media (min-width: 769px) {
+    #navbar .nav-links > .nav-item:last-child {
+        padding-left: 60px;
+        padding-right: 0;
+    }
+
+    #navbar .nav-links > .nav-item:last-child > .nav-link {
+        justify-content: flex-end;
+    }
+}
+
 @media (max-width: 768px) {
     :root {
         --nav-height: var(--nav-mobile-height);

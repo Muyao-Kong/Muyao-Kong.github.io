@@ -203,6 +203,16 @@ md我已经尽力了 */
     flex-shrink: 0;
 }
 
+.company .left .logo--contain {
+    flex-shrink: 0;
+    border-radius: 0;
+    overflow: visible;
+}
+
+.company .left .logo--contain img {
+    object-fit: contain;
+}
+
 .hidden {
     display: none;
 }

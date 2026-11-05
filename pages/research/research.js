@@ -46,10 +46,10 @@ function renderProjectSection(sectionData) {
         projectTitle.textContent = projectData.name;
         article.appendChild(projectTitle);
 
-        if (projectData.role) {
+        if (projectData.role || projectData.location || projectData.duration) {
             const role = document.createElement("p");
             role.className = "research-role";
-            role.textContent = projectData.role;
+            role.textContent = [projectData.role, projectData.location, projectData.duration].filter(Boolean).join(" | ");
             article.appendChild(role);
         }
 
@@ -104,7 +104,7 @@ function renderProjectSection(sectionData) {
 
 function fetchResearch() {
     const dataSource = researchInfo.dataset.source || "./research.json";
-    fetch(`${dataSource}?v=20261022-1`)
+    fetch(`${dataSource}?v=20261105-5`)
         .then(res => {
             if (!res.ok) {
                 throw new Error("network response was not ok");
@@ -112,7 +112,6 @@ function fetchResearch() {
             return res.json();
         })
         .then(data => {
-            renderParagraphSection(data.research_statement);
             renderParagraphSection(data.research_interest);
             renderProjectSection(data.research_projects);
         })

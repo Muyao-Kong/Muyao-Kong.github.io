@@ -15,7 +15,7 @@ const hMoreInfo = document.querySelector("#h-more-info");
 //可能用得上？
 const otherHTML = document.querySelector("#other");
 
-const educationPromise = fetch('./education.json')
+const educationPromise = fetch('./education.json?v=20261105-1')
 
 ////-------------------------------窗口-------------------------------
 function logoToHomepage(){
@@ -61,7 +61,7 @@ function displayEducation() {
         var cSchoolAndMajorString = `
             <header>
                 <p>${currentSchoolData.name}</p>
-                <p>Major in ${currentSchoolData.major}</p>
+                <p>${currentSchoolData.degree} in ${currentSchoolData.major}</p>
                 <p>Minor in ${currentSchoolData.minor}</p>
             </header>
             
@@ -78,6 +78,10 @@ function displayEducation() {
                 <p>${m}</p>
             `
         }).join("\n");
+
+        if (currentSchoolData.coursework && currentSchoolData.coursework.length > 0) {
+            cMoreInfoString += `<p>Relevant Coursework: ${currentSchoolData.coursework.join(", ")}</p>`;
+        }
 
         // Add Strings to HTML
         cSchoolAndMajor.innerHTML += cSchoolAndMajorString;

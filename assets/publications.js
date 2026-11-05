@@ -11,12 +11,16 @@
                 return;
             }
 
-            const span = document.createElement("span");
-            span.textContent = segment.text || "";
+            const element = document.createElement(segment.kind === "link" ? "a" : "span");
+            element.textContent = segment.text || "";
             if (segment.kind === "venue") {
-                span.className = "publication-venue";
+                element.className = "publication-venue";
+            } else if (segment.kind === "link") {
+                element.href = segment.href;
+                element.target = "_blank";
+                element.rel = "noopener noreferrer";
             }
-            paragraph.appendChild(span);
+            paragraph.appendChild(element);
         });
     }
 
@@ -42,7 +46,7 @@
 
     document.querySelectorAll("[data-publications-source]").forEach(container => {
         const source = new URL(container.dataset.publicationsSource, document.baseURI);
-        source.searchParams.set("v", "20261022-3");
+        source.searchParams.set("v", "20261105-7");
 
         fetch(source.href)
             .then(res => {

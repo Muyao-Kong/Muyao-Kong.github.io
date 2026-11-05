@@ -2,7 +2,7 @@ const logoImgHTML = document.querySelector(".logo");
 const internsHTML = document.querySelector(".interns");
 const researchExperiencesHTML = document.querySelector(".research-experiences");
 
-const experincePromise = fetch('./experiences.json?v=20261005-1');
+const experincePromise = fetch('./experiences.json?v=20261105-3');
 ////-------------------------------窗口-------------------------------
 function logoToHomepage(){
     logoImgHTML.addEventListener("click", () => {
@@ -29,10 +29,10 @@ function renderExperiences(container, jobs) {
             <li>
                 <div class="company">
                     <div class="left">
-                        <div class="logo">
+                        ${job.logo_1x ? `<div class="logo${job.logo_fit === "contain" ? " logo--contain" : ""}">
                             <img src="${job.logo_1x}" srcset="${job.logo_2x} 2x, ${job.logo_1x} 1x"
                                 alt="${job.name} logo">
-                        </div>
+                        </div>` : ""}
                         <p>${job.name}</p>
                     </div>
 
